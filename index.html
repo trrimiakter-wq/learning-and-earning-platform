@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Learning and Earning Platform - Learn skills, explore courses and build your future.">
+  <title>Learning and Earning Platform</title>
+  <style>
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      color: #fff;
+      background: #172536;
+    }
+    header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 16px 5%;
+      background: #126d9a;
+    }
+    .logo {
+      font-size: 17px;
+      font-weight: bold;
+      line-height: 1.4;
+    }
+    .logo span { color: #7fffd4; }
+    nav { display: flex; gap: 16px; align-items: center; }
+    nav a { color: white; text-decoration: none; font-weight: bold; }
+    .hero {
+      text-align: center;
+      padding: 48px 20px 36px;
+      background: linear-gradient(145deg, #1384a9, #2639a5 65%, #172536);
+    }
+    .hero h1 { font-size: clamp(29px, 6vw, 48px); margin: 8px 0 16px; }
+    .hero p { font-size: 17px; line-height: 1.7; max-width: 600px; margin: 0 auto 24px; }
+    .buttons {
+      display: flex; flex-wrap: wrap;
+      justify-content: center; gap: 12px;
+    }
+    .btn {
+      display: inline-block;
+      padding: 14px 21px;
+      border-radius: 30px;
+      background: #08ae91;
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      border: 1px solid #63e4ce;
+    }
+    .btn.green { background: #13a94e; }
+    section { padding: 32px 5%; text-align: center; }
+    section h2 { font-size: 27px; margin-top: 0; }
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(145px, 1fr));
+      gap: 15px; max-width: 950px; margin: 22px auto;
+    }
+    .card {
+      background: #24384d;
+      padding: 23px 12px;
+      border-radius: 15px;
+      border: 1px solid #3d6079;
+    }
+    .card .emoji { font-size: 35px; }
+    .card h3 { font-size: 18px; }
+    .card p { color: #d2dfeb; font-size: 14px; line-height: 1.6; }
+    .notice { color: #cbd9e8; font-size: 14px; }
+    footer {
+      padding: 25px 15px;
+      text-align: center;
+      background: #0d1928;
+      color: #cbd9e8;
+      font-size: 14px;
+      line-height: 1.8;
+    }
+    footer a { color: #7fffd4; }
+    @media (max-width: 480px) {
+      nav { gap: 10px; }
+      nav a { font-size: 13px; }
+      .hero { padding-top: 38px; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">🎓 LEARNING AND<br><span>EARNING PLATFORM</span></div>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#courses">Courses</a>
+    </nav>
+  </header>
+
+  <main>
+    <div class="hero" id="home">
+      <h1>WELCOME TO<br>LEARNING AND EARNING PLATFORM</h1>
+      <p>শিখুন নতুন দক্ষতা, জ্ঞান বাড়ান এবং নিজের ভবিষ্যৎ গড়ুন।</p>
+      <div class="buttons">
+        <a class="btn" href="#account">🔐 Login</a>
+        <a class="btn green" href="#account">👤 Sign Up</a>
+        <a class="btn" href="#store">🛍️ Store</a>
+        <a class="btn green" href="#earning">💼 Earning</a>
+      </div>
+    </div>
+
+    <section id="courses">
+      <h2>📚 Explore Our Courses</h2>
+      <div class="cards">
+        <div class="card">
+          <div class="emoji">💻</div>
+          <h3>Computer Skills</h3>
+          <p>প্রযুক্তি ও ডিজিটাল দক্ষতা শিখুন।</p>
+        </div>
+        <div class="card">
+          <div class="emoji">🌐</div>
+          <h3>Digital Skills</h3>
+          <p>অনলাইনে কাজের উপযোগী দক্ষতা গড়ুন।</p>
+        </div>
+        <div class="card">
+          <div class="emoji">📖</div>
+          <h3>Online Learning</h3>
+          <p>নিজের সুবিধামতো শিখুন।</p>
+        </div>
+      </div>
+      <p class="notice">কোর্সের বিস্তারিত শিগগিরই যোগ করা হবে।</p>
+    </section>
+
+    <section id="earning">
+      <h2>💼 Learn and Grow</h2>
+      <p>দক্ষতা অর্জন করুন এবং বাস্তব কাজের সুযোগ খুঁজুন।</p>
+      <p class="notice">আয়ের সুযোগ ও নিয়ম পরে যুক্ত করা হবে।</p>
+    </section>
+
+    <section id="store">
+      <h2>🛍️ Our Store</h2>
+      <p>কোর্স ও ডিজিটাল পণ্য এখানে প্রদর্শন করা যাবে।</p>
+    </section>
+
+    <section id="account">
+      <h2>👤 Join Our Platform</h2>
+      <p>সদস্য নিবন্ধন ও লগইন ব্যবস্থা পরবর্তী ধাপে তৈরি হবে।</p>
+      <p class="notice">এই মুহূর্তে Login ও Sign Up বাটনগুলো শুধু পেজের অংশে নিয়ে যায়।</p>
+    </section>
+  </main>
+
+  <footer>
+    <strong>Learning and Earning Platform</strong><br>
+    Learn Skills • Build Your Future<br>
+    © 2026 Learning and Earning Platform
+  </footer>
+</body>
+    </html>
